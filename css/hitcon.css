@@ -75,7 +75,7 @@ a:hover, a:active {
 #content {
     margin: 30px auto;
     width: 798px;
-    height: 486px;
+    height: 516px;
     background-image: url("../img/content.png"); 
     background-size: 100% 100%;
     text-shadow: 0px 0px 5px #0090ff; 
@@ -107,15 +107,3 @@ a:hover, a:active {
 #content .text ul {
     padding-left: 20px;
 }
-
-#star {
-    background-image: -webkit-gradient(radial, 30% 30%, 1, 30% 30%, 20, from(rgba(159,229,255,1)), color-stop(0.08, rgba(90,160,247,.5)), to(transparent) );
-    background-image: -moz-radial-gradient(ellipse, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 30px);
-
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50px;
-    left: 880px;
-}
-
