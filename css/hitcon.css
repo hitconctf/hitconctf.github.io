@@ -124,4 +124,7 @@ a:hover, a:active {
     height: 35px;
 }
 
+#footer th {
+    text-align: left;
+}
 
