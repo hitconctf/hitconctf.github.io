@@ -69,7 +69,7 @@ a:hover, a:active {
 #content {
     margin: 30px auto;
     width: 798px;
-    height: 536px;
+    height: 556px;
     background-image: url("../img/content.png"); 
     background-size: 100% 100%;
     text-shadow: 0px 0px 5px #0090ff; 
@@ -81,8 +81,8 @@ a:hover, a:active {
 }
 
 #content .text {
-    padding-top: 55px;
-    padding-left: 140px;
+    padding-top: 50px;
+    padding-left: 125px;
     padding-right: 100px;
 }
 
@@ -100,6 +100,10 @@ a:hover, a:active {
 
 #content .text ul {
     padding-left: 20px;
+}
+
+.red-glow  {
+    text-shadow: 0px 0px 5px #ff0000, 0px 0px 5px #ff0000, 0px 0px 5px #ffb700; 
 }
 
 #footer {
