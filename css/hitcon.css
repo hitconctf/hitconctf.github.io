@@ -21,6 +21,10 @@ a:hover, a:active {
     color: #50D1FF;
 }
 
+.red-glow  {
+    text-shadow: 0px 0px 5px #ff0000, 0px 0px 5px #ff0000, 0px 0px 5px #ffb700; 
+}
+
 #header {
     margin-top: 60px;
 }
@@ -69,21 +73,31 @@ a:hover, a:active {
 #content {
     margin: 30px auto;
     width: 798px;
-    height: 556px;
-    background-image: url("../img/content.png"); 
-    background-size: 100% 100%;
     text-shadow: 0px 0px 5px #0090ff; 
-    font-family: 'Helvetica Neue', 'Open Sans', 'Ubuntu Condensed', '&#24494;&#36575;&#27491;&#40657;&#39636;', '微軟正黑體','Microsoft JhengHei', sans-serif;
+    font-family: 'Helvetica Neue', 'Open Sans', 'Ubuntu Condensed', '微軟正黑體','Microsoft JhengHei', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #FFFFFF;
     line-height: 20px;
+    position: relative;
+    z-index: 2;
+    background: url(../img/content_head.png) top left no-repeat,
+                url(../img/content_foot.png) bottom left no-repeat;
+}
+
+#content:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 167px;
+    right: 0;
+    bottom: 152px;
+    left: 0;
+    background: url(../img/content_body.png) top left repeat-y;
 }
 
 #content .text {
-    padding-top: 50px;
-    padding-left: 125px;
-    padding-right: 100px;
+    padding: 50px 125px 30px 100px;
 }
 
 #content .text h4 {
@@ -102,8 +116,8 @@ a:hover, a:active {
     padding-left: 20px;
 }
 
-.red-glow  {
-    text-shadow: 0px 0px 5px #ff0000, 0px 0px 5px #ff0000, 0px 0px 5px #ffb700; 
+#content .reg {
+    color: #50D1FF;
 }
 
 #footer {
@@ -127,6 +141,3 @@ a:hover, a:active {
     text-align: left;
 }
 
-#content .reg {
-    color: #50D1FF;
-}
