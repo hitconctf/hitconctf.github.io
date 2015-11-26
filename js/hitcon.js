@@ -40,7 +40,7 @@ function Background() {
         side: THREE.DoubleSide
     } );
 
-    for ( var i = 0; i < 800; i ++ ) {
+    for ( var i = 0; i < 800; i += 2 ) {
         var radius = 50 + ( Math.random() * 150 );
 
         var object = new THREE.Mesh( plane, material);
@@ -68,7 +68,7 @@ function Background() {
         wireframe: true
     } );
 
-    for ( var i = 0; i < 800; i ++ ) {
+    for ( var i = 0; i < 800; i += 2 ) {
         var radius = 50 + ( Math.random() * 150 );
 
         var object = new THREE.Mesh( plane, material );
@@ -186,7 +186,7 @@ camera.up.x = -1;
 camera.up.normalize();
 
 // Renderer
-renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true }) ;
+renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false}) ;
 renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
 renderer.setClearColor(0, 1);
 
