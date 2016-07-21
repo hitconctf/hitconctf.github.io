@@ -85,7 +85,7 @@ ul#team-list img {
 .line {
     margin: 0 auto;
     height: 3px;
-    width: 1024px;
+    width: 900px;
     background: -webkit-linear-gradient(left, rgba(0,0,0,0.5) 0%, #50D1FF 50%, rgba(0,0,0,0.5) 100%);
     background: -moz-linear-gradient(left, rgba(0,0,0,0.5) 0%, #50D1FF 50%, rgba(0,0,0,0.5) 100%);
     background: -ms-linear-gradient(left, rgba(0,0,0,0.5) 0%, #50D1FF 50%, rgba(0,0,0,0.5) 100%);
@@ -94,7 +94,7 @@ ul#team-list img {
 
 #content {
     margin: 30px auto;
-    width: 1024px;
+    width: 798px;
     text-shadow: 0px 0px 5px #0090ff; 
     font-family: 'Helvetica Neue', 'Open Sans', 'Ubuntu Condensed', '微軟正黑體','Microsoft JhengHei', sans-serif;
     font-weight: 300;
@@ -119,14 +119,12 @@ ul#team-list img {
 }
 
 #content .text {
-    padding: 50px 125px 50px 120px;
+    padding: 50px 125px 30px 100px;
 }
 
 #content .text h4 {
     font-size: 16px;
     margin: 0;
-    margin-bottom: 10px;
-    margin-top: 20px;
 }
 
 #content .text p, ul, table {
@@ -161,7 +159,7 @@ ul#team-list img {
 #footer {
     margin: -10px auto 20px;
     padding-left: 100px;
-    width: 1024;
+    width: 798px;
     text-shadow: 0px 0px 5px #0090ff; 
     font-family: 'Helvetica Neue', 'Open Sans', 'Ubuntu Condensed', '', '微軟正黑體','Microsoft JhengHei', sans-serif;
     font-weight: 300;
