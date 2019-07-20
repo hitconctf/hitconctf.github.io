@@ -1,0 +1,203 @@
+body {
+    margin: 0; 
+    background-color: #000000;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.25;
+    z-index: -9999;
+}
+
+a, a:visited {
+    color: #FFFFFF;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+    font-weight: 400;
+}
+
+a:hover, a:active {
+    color: #50D1FF;
+}
+
+ul#team-list {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+table#agenda th, table#agenda td{
+    border: 1px solid;
+    border-color: #9ecaed;
+}
+
+ul#team-list img {
+    padding-right: 10px;
+}
+
+.red {
+    text-shadow: 0px 0px 5px #ff0000, 0px 0px 5px #ff0000, 0px 0px 5px #ffb700; 
+}
+
+#header {
+    margin-top: 50px;
+}
+
+#header .title {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #0090ff, 0px 0px 5px #0090ff, 0px 0px 5px #0090ff; 
+    text-align: center;
+    font-family: 'Helvetica Neue', 'Ubuntu Condensed', '微軟正黑體','Microsoft JhengHei', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 7.77px;
+}
+
+#slogan {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#slogan .text {
+    display:inline-block;
+    text-shadow: 0px 0px 5px #0090ff, 0px 0px 5px #0090ff; 
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 1.66px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    width: 800px;
+}
+
+.line {
+    margin: 0 auto;
+    height: 3px;
+    width: 900px;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.5) 0%, #50D1FF 50%, rgba(0,0,0,0.5) 100%);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.5) 0%, #50D1FF 50%, rgba(0,0,0,0.5) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0.5) 0%, #50D1FF 50%, rgba(0,0,0,0.5) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0.5) 0%, #50D1FF 50%, rgba(0,0,0,0.5) 100%);
+}
+
+#content {
+    margin: 30px auto;
+    width: 798px;
+    text-shadow: 0px 0px 5px #0090ff; 
+    font-family: 'Helvetica Neue', 'Open Sans', 'Ubuntu Condensed', '微軟正黑體','Microsoft JhengHei', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 20px;
+    position: relative;
+    z-index: 2;
+    background: url(../img/content_head.png) top left no-repeat,
+                url(../img/content_foot.png) bottom left no-repeat;
+}
+
+#content:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 167px;
+    right: 0;
+    bottom: 152px;
+    left: 0;
+    background: url(../img/content_body.png) top left repeat-y;
+}
+
+#content .text {
+    padding: 50px 125px 50px 120px;
+}
+
+#content .text h4 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#content .text p, ul, table {
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#content .text b {
+    font-weight: 500;
+}
+
+#content .text ul {
+    padding-left: 60px;
+}
+
+
+#agenda {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+#agenda td {
+    padding-left: 10px;
+}
+
+hr {
+    border:0; 
+    height:1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #2796C5, rgba(0, 0, 0, 0));
+}
+
+.history { 
+    font-size: 15px;
+    float:right;
+    font-weight: 300;
+    opacity: 0.7;
+    padding-left: 10px;
+    margin-right: 3px;
+}
+
+.advisor img {
+    height: 70px;
+}
+
+.host img {
+    height: 45px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.sponsor img {
+    height: 45px;
+    margin-right: 55px;
+    margin-top: 10px;
+}
+
+.partner img {
+    margin-top: 5px;
+    height: 25px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer h4 {
+    margin-top: 0px !important;
+}
